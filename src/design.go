@@ -8,9 +8,8 @@ var _ = API("calc", func() {
 	Title("Calculator Service")
 	Description("Service for adding numbers, a Goa teaser")
 	Server("calc", func() {
-		Host("localhost", func() {
-			URI("http://localhost:8000")
-			URI("grpc://localhost:8080")
+		Host("0.0.0.0", func() {
+			URI("http://0.0.0.0:8000")
 		})
 	})
 })
@@ -31,8 +30,6 @@ var _ = Service("calc", func() {
 			GET("/add/{a}/{b}")
 		})
 
-		GRPC(func() {
-		})
 	})
 
 	Files("/openapi.json", "./gen/http/openapi.json")
