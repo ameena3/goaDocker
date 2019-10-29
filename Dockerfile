@@ -33,4 +33,4 @@ RUN goa gen calc/design
 RUN goa example calc/design
 RUN go install ./cmd/calc 
 
-ENTRYPOINT [ "calc" ]
+#ENTRYPOINT [ "calc" ]
