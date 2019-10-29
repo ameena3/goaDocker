@@ -6,7 +6,7 @@ COPY ./src/design.go /go/src/calc/design/
 WORKDIR /go/src/calc
 
 # Set up the installation directory for go
-RUN GOBIN=/go/bin
+ENV GOBIN=/go/bin
 
 # Initialize gomodules
 RUN go mod init calc
