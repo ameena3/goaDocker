@@ -25,11 +25,8 @@ RUN unzip /go/bin/protoc.zip -d /temp
 RUN cp /temp/bin/protoc /go/bin/
 
 #Copy the source code 
-RUN mkdir -p ./work/design
-COPY ./src/design.go /go/src/work/design/
 WORKDIR /go/src/work
 
 # Initialize gomodules
 RUN go mod init 
 
-    
