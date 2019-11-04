@@ -24,9 +24,3 @@ RUN wget -O /go/bin/protoc.zip https://github.com/protocolbuffers/protobuf/relea
 RUN unzip /go/bin/protoc.zip -d /temp
 RUN cp /temp/bin/protoc /go/bin/
 
-#Copy the source code 
-WORKDIR /go/src/work
-
-# Initialize gomodules
-RUN go mod init 
-

@@ -1,4 +1,4 @@
-This is the first attempt to creat a dockerized goa env.
+This is the second attempt to creat a dockerized goa env.
 
 Steps to run the container.
 1. Clone the repo.
